@@ -35,6 +35,7 @@ In the nvim window:
 - `TAB` : For autocomplete
 - `! <command>` : For use any linux command in the current window
 - `:ter` : Open a terminal in the current window
+- `F11`: Full screen
 
 **Spliting**
 - `:sv` : Split horizontally
@@ -51,6 +52,9 @@ In the nvim window:
 **Directory & Files**
 - `F2`: Open the directory window
 - `?`: After F2 check the options 
+
+**Custom**
+- `F5`: Open the terminal in the current window
 
 # References
 https://www.linode.com/docs/guides/how-to-install-neovim-and-plugins-with-vim-plug/
