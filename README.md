@@ -13,7 +13,7 @@ With vim installed (`sudo apt-get install vim`):
    curl https://raw.githubusercontent.com/camilo-cf/nvim/main/init.vim> ~/.config/nvim/init.vim
    ```
    
-4. Install the python3 support for nvim `pip3 install pynvim neovim`
+4. Install the python3 support for nvim `pip3 install pynvim neovim jedi`
 
 5. Open `nvim` and inside:
   - Check the health of nvim `:checkhealth`
