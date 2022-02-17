@@ -141,8 +141,6 @@ set termguicolors  " Activa true colors en la terminal
 set background=light " Fondo del tema: light o dark
 colorscheme kalisi " Nombre del tema
 :highlight Pmenu ctermbg=blue guibg=blue
-" If conda is installed
-let g:python3_host_prog='~/miniconda3/bin/python'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
