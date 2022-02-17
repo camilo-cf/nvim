@@ -105,10 +105,10 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set title  " Muestra el nombre del archivo en la ventana de la terminal
-" set number  " Muestra los números de las líneas
+set number  " Muestra los números de las líneas
 set relativenumber " Muestra los números relativos
 set noswapfile " No permite múltiples archivos swap - multi sensiones en 1 archivo
-set mouse=a  " Permite la integración del mouse (seleccionar texto, mover el cursor)
+" set mouse=a  " Permite la integración del mouse (seleccionar texto, mover el cursor)
 set hlsearch " Resalta las búsquedas
 set incsearch " Incremental search 
 " set nowrap  " No dividir la línea si es muy larga
@@ -138,6 +138,6 @@ set expandtab  " Insertar espacios en lugar de <Tab>s
 " español
 "
 set termguicolors  " Activa true colors en la terminal
-set background=dark " Fondo del tema: light o dark
-colorscheme industry " Nombre del tema
+set background=light " Fondo del tema: light o dark
+colorscheme kalisi " Nombre del tema
 :highlight Pmenu ctermbg=blue guibg=blue
