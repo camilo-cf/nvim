@@ -143,4 +143,8 @@ colorscheme kalisi " Nombre del tema
 :highlight Pmenu ctermbg=blue guibg=blue
 " If conda is installed
 let g:python3_host_prog='~/miniconda3/bin/python'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Shortcuts
 nnoremap <F5> :ter<cr>
+:tnoremap <Esc> <C-\><C-n>
