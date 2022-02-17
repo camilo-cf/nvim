@@ -26,6 +26,12 @@ With vim installed (`sudo apt-get install vim`):
 
 7. Use `nvim` to open any file
 
+# Install without clone
+```
+wget https://raw.githubusercontent.com/camilo-cf/nvim/main/install.sh
+bash install.sh
+```
+
 # Useful commands
 In the nvim window:
 - `:e <file_name>` : Open the <file_name> file in the current window/tab
