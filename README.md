@@ -15,17 +15,16 @@ With vim installed (`sudo apt-get install vim`):
    
 4. Install the python3 support for nvim `pip3 install pynvim neovim jedi`
 
-5. Open `nvim` and inside:
-  - Check the health of nvim `:checkhealth`
-  - Install the plugins `:PlugInstall`
-  - Update the plugins `:UpdateRemotePlugins`
-
-6. Add the backgound 
+5. Add the backgound 
    ```
    mkdir ~/.config/nvim/colors
    curl https://raw.githubusercontent.com/freeo/vim-kalisi/master/colors/kalisi.vim> ~/.config/nvim/colors/kalisi.vim   
    ```
- 
+6. Open `nvim` and inside:
+  - Check the health of nvim `:checkhealth`
+  - Install the plugins `:PlugInstall`
+  - Update the plugins `:UpdateRemotePlugins`
+
 7. Use `nvim` to open any file
 
 # Useful commands
