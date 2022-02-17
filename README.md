@@ -15,7 +15,7 @@ With vim installed (`sudo apt-get install vim`):
 5. Open `nvim` and inside:
   - Check the health of nvim `:checkhealth`
   - Install the plugins `:PlugInstall`
-  - Update the plugins :UpdateRemotePlugins
+  - Update the plugins `:UpdateRemotePlugins`
   
 6. Use `nvim` to open any file
 
