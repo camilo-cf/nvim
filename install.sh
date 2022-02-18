@@ -8,3 +8,5 @@ curl https://raw.githubusercontent.com/camilo-cf/nvim/main/init.vim> ~/.config/n
 pip3 install pynvim neovim jedi debugpy
 mkdir ~/.config/nvim/colors
 curl https://raw.githubusercontent.com/freeo/vim-kalisi/master/colors/kalisi.vim> ~/.config/nvim/colors/kalisi.vim
+wget https://raw.githubusercontent.com/camilo-cf/nvim/main/.vimspector.json
+rm install.sh
