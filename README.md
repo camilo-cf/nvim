@@ -1,5 +1,5 @@
 # How to use it?
-With vim installed (`sudo apt-get install vim`):
+With vim installed (`sudo apt-get install vim python3-pip`):
 
 1. Install nvim
 `sudo apt-get install neovim` or `sudo apt install neovim`
