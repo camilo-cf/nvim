@@ -58,6 +58,7 @@ In the nvim window:
 - `gt` : Change the tab to the right
 - `gT` : Change the tab to the left
 - `:tabclose` : Close the current tab
+- `:tabnew` : Open a new tab
 
 **Directory & Files**
 - `F2`: Open the directory window
