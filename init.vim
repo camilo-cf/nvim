@@ -98,6 +98,9 @@ let g:echodoc_enable_at_startup = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-surround'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Inspector Debugger
+let g:vimspector_enable_mappings = 'HUMAN'
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python'}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#end()
@@ -108,7 +111,7 @@ set title  " Muestra el nombre del archivo en la ventana de la terminal
 set number  " Muestra los números de las líneas
 set relativenumber " Muestra los números relativos
 set noswapfile " No permite múltiples archivos swap - multi sensiones en 1 archivo
-" set mouse=a  " Permite la integración del mouse (seleccionar texto, mover el cursor)
+set mouse=a  " Permite la integración del mouse (seleccionar texto, mover el cursor)
 set hlsearch " Resalta las búsquedas
 set incsearch " Incremental search 
 " set nowrap  " No dividir la línea si es muy larga
@@ -144,5 +147,5 @@ colorscheme kalisi " Nombre del tema
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
-nnoremap <F5> :ter<cr>
+nnoremap <F7> :ter<cr>
 :tnoremap <Esc> <C-\><C-n>
