@@ -1,6 +1,7 @@
 #/usr/bin/bash
 
-sudo apt-get install vim neovim
+sudo apt-get install vim
+sudo apt install neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 mkdir ~/.config/nvim
 curl https://raw.githubusercontent.com/camilo-cf/nvim/main/init.vim> ~/.config/nvim/init.vim
