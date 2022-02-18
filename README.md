@@ -13,6 +13,7 @@ With vim installed (`sudo apt-get install vim`):
    ```
    
 4. Install the python3 support for nvim `pip3 install pynvim neovim jedi`
+   If you want the debugger add `pip3 install debugpy` 
 
 5. Add the backgound 
    ```
@@ -23,6 +24,7 @@ With vim installed (`sudo apt-get install vim`):
   - Check the health of nvim `:checkhealth`
   - Install the plugins `:PlugInstall`
   - Update the plugins `:UpdateRemotePlugins`
+  - Install the debugger `debugpy`: `:VimspectorInstall debugpy`
 
 7. Use `nvim` to open any file
 
@@ -31,6 +33,7 @@ With vim installed (`sudo apt-get install vim`):
 wget https://raw.githubusercontent.com/camilo-cf/nvim/main/install.sh
 bash install.sh
 ```
+Then continue on step 6
 
 # Useful commands
 In the nvim window:
@@ -39,7 +42,9 @@ In the nvim window:
 - `TAB` : For autocomplete
 - `! <command>` : For use any linux command in the current window
 - `:ter` : Open a terminal in the current window
-- `F11`: Full screen
+- `F11`: Full screen (if GUI)
+- `:set mouse=r`: Mouse with ability to copy paste from console
+- `:set mouse=a`: Mouse interactive mode
 
 **Spliting**
 - `:sv` : Split horizontally
@@ -52,14 +57,56 @@ In the nvim window:
 - `:tabedit <file_name>` : Create a new tab opening the <file_name> file
 - `gt` : Change the tab to the right
 - `gT` : Change the tab to the left
+- `:tabclose` : Close the current tab
 
 **Directory & Files**
 - `F2`: Open the directory window
 - `?`: After F2 check the options 
 
+**Debug**
+- `F5`: start debugging or continue
+- `F3`: stop debugging
+- `F4`: restart with same configuration
+- `F6`: pause debugging
+- `F9`: Toggle a breakpoint on the current line
+- `F10`: step over
+- `F11`: step into
+- `F12`: step out
+
+Default `.vimspector.json`
+```
+{
+    "configurations": {
+        "run": {
+            "adapter": "debugpy",
+            "default": true,
+            "configuration": {
+                "request": "launch",
+                "type": "python",
+                "cwd": "${workspaceRoot}",
+                "stopOnEntry": true,
+                "program": "${file}"
+            },
+            "breakpoints": {
+                "exception": {
+                    "raised": "N",
+                    "uncaught": "",
+                    "userUnhandled": ""
+                }
+            }
+        }
+    }
+}
+```
+
 **Custom**
-- `F5`: Open the terminal in the current window
+- `F7`: Open the terminal in the current window
+
+**Useful Commands**
+- `:mouse`
 
 # References
 https://www.linode.com/docs/guides/how-to-install-neovim-and-plugins-with-vim-plug/
 https://stsewd.dev/es/posts/neovim-plugins/
+https://github.com/puremourning/vimspector#python
+https://nielscautaerts.xyz/debugging-python-in-neovim.html
